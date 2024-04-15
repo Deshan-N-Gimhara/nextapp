@@ -16,17 +16,17 @@ const UsersPage = async () => {
 
         <>
             <h1>Users Page</h1>
-            <table className={styles.table}>
+            <table className='table'>
                 <thead >
                     <tr>
-                        <th className={styles.tableHeader}>Name</th>
-                        <th className={styles.tableHeader}>Email</th>
+                        <th >Name</th>
+                        <th >Email</th>
                     </tr>
                 </thead>
                 <tbody>
                     {users.map(user => {
                         return (
-                            <tr key={user.id} >
+                            <tr key={user.id} className="hover">
                                 <td >{user.name}</td>
                                 <td >{user.email}</td>
                             </tr>
